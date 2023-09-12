@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <title>Personal webiste go brrr</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/247faa2356.js" crossorigin="anonymous"></script>
+    
+    <meta name=“viewport” content=“width=device-width, initial-scale=1.0>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, CSS, Javascript, Tecario">
+    <meta name="description" content="This website servers as a personal profolio for John (Ka Ho) Ho, and I'm currently learning and exploring opportunities in the fields of computer science and business finance. I possess experience in Python, HTML, CSS, and some JavaScript. In the near future, I hope to craft clean and optimized products and collaborate with teams to produce outstanding projects."
+  </head>
+  <body>
+    <div class="scroll-progress" id="scroll-progress"></div>
+    <header>
+      <div id="navbar" class="navbar">
+        <div class="logo"><img class="logoimg" src="images/tec_logo.png" alt="website logo"></div>
+        <ul class="links">
+          <li><p>&#160;</p></li>
+          <li><p>&#160;</p></li>
+          <li><a class="headerlinks headertext" href="#">Home</a></li>
+          <li><a class="headerlinks headertext" href="#ABOUT">About</a></li>
+          <li><a class="headerlinks headertext" href="#experience">Experience</a></li>
+          <li><a class="headerlinks headertext" href="#projects">Projects</a></li>
+          <li><a class="headerlinks headertext" href="#interests">Other Interests</a></li>
+        </ul>
+        <a href="#contactme" class="MagenticButtonContact contactme headertext">Contact</a>
+        <div class="checkboxdiv">
+          <input type="checkbox" id="toggle">
+          <label class=" dropdownlabel toggle_btn" for="toggle"></label>
+        </div>
+      </div>
+      <div class="dropdown_menu">
+        <li class="firstli"><a class="headerlinks headertext" href="#">Home</a></li>
+        <li><a class="headerlinks headertext" href="#ABOUT">About</a></li>
+        <li><a class="headerlinks headertext" href="#experience">Experience</a></li>
+        <li><a class="headerlinks headertext" href="#projects">Projects</a></li>
+        <li><a class="headerlinks headertext" href="#interests">Other Interests</a></li>
+        <li><a href="#contactme" class="contactme headertext">Contact</a></li>
+      </div>
+    </header>
+    <script>
+      const toggleBtn = document.querySelector('.toggle_btn')
+      const toggleBtnIcon = document.querySelector('.toggle_btn i')
+      const dropDownMenu = document.querySelector('.dropdown_menu')
+
+      toggleBtn.onclick = function (){
+        dropDownMenu.classList.toggle('open')
+        const isOpen = dropDownMenu.classList.contains('open')
+      }
+
+    const navbar = document.getElementById("navbar");
+    const sticky = navbar.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+      } else {
+      navbar.classList.remove("sticky");
+      }
+    }
+    </script>
+
+
+    <div class="expdivbackgroundACTUAL" id="expdivbackgroundACTUAL"></div>
+    <div class="TecarioH" id="TecarioH">
+      <div class="TecarioHeaderInner" id="TecarioHeaderInner"></div>
+    </div>
+
+    <!-- MAIN SECTION BEGIN -->
+    <div class="outer">
+      <div id="ABOUT" class="anchors"></div>
+      <div class="innerparts" id="ABOUT">
+        <!-- BIO SECTION -->
+        <img src="images/backgrounds/1.png" alt="grainy background shape 1" class="bgimg bio_bgimg">
+        <div class="biogrid inner_boxes">
+          <div class="bio_text hidden">
+            <div class="nametext recifeB">
+              John &#40;<span class="bwR">Ka Ho</span>&#41; Ho
+            </div>
+            <div class="school_major hidden">
+              <div class="school bwR">
+                Rice University <br> <span class="classof2026 recifeR">Class Of 2026</span> <span>🦉</span>
+              </div>
+              <div class="majordesc bwR">
+                Double Major in <br> <span class="majorgrad recifeR">Computer Science</span> and <br><span class="majorgrad"> Business Finance</span>
+              </div>
+            </div>
+            <div class="biodesc hidden telegrafL">
+            Hi&hairsp;! I&#146m John Ho, and I&#146m currently learning and exploring opportunities in the fields of computer science and business finance. I possess experience in Python, HTML, CSS, and some JavaScript. In the near future, I hope to craft clean and optimized products and collaborate with teams to produce outstanding projects.
+            </div>
+            <div class="img_links">
+              <div class="hidden">
+                <a href="https://www.linkedin.com/in/john01px2022/" target="_blank">
+                  <i class="fa-brands fa-linkedin referenceimg" style="color: #00e8c2;"></i>
+                </a>
+              </div>
+              <div class="hidden">
+                <a href="https://github.com/tecari0" target="_blank">
+                  <i class="fa-brands fa-github referenceimg" style="color: #00e8c2;"></i>
+                </a>
+              </div>
+              <div class="hidden">
+                <a href="mailto:john01px2022@gmail.com">
+                  <i class="fa-solid fa-envelope referenceimg" style="color: #00e8c2;"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div>
+            <img class="myphoto hidden" src="images/rep_img.jpg" alt="a picture of me">
+          </div>
+        </div>
+      </div>
+<!-- Experience section -->
+
+        <div id="expouterbox">
+          <div class="expdivbackground" id="expdivbackground"></div>
+          <div class="innerparts">
+          <div id="experience" class="anchors" ></div>
+            <div class="experienceHead">
+              <h2 class="sectionhead hidden recifeL">Experience</h2>
+            </div>
+            <!-- Most Recent (1)-->
+            <div class="exp_outer inner_boxes expright">
+              <div class="expimagescontainer hidden">
+                <img class="exp1_img expimages" src="images/rep_img.jpg" alt="a picture of me">
+              </div>
+              <div class="job_desc">
+                <div class="job_nametitle text_alignL bwR">
+                  <p class="job_name hidden">Job</p>
+                  <p class="job_title hidden">Title</p>
+                </div>
+                <div class="absolutebottom">
+                  <p class="job_desc_specific bodytext hidden telegrafL">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat, animi molestiae incidunt esse iure magni distinctio excepturi quaerat obcaecati perferendis, rem repellendus cumque est quae vero earum amet dignissimos molestias libero ab? Sed quidem magnam veniam error, libero nulla qui consequuntur quae ab harum distinctio, ratione voluptatem ut illo. Ex?
+                  </p>
+                </div>
+              </div>
+              <div class="exp_time hidden recifeB">
+                <p>TBD2023 to TBD2023</p>
+              </div>
+            </div>
+            <!-- second job (2) -->
+            <div class="exp_outer inner_boxes expleft" id="expbox">
+              <div class="expimagescontainer hidden" id="targetexpbox">
+                <img class="exp2_img expimages" src="/images/rep_img.jpg" alt="replacement img">
+              </div>
+              <div class="linkedinspin hidden">
+                <a href="https://www.linkedin.com/in/john01px2022/" target="_blank">
+                  <img class="linkedinspinimg" src="images/linkedinspin.png" alt="linkedin link">
+                </a>
+              </div>
+              <div class="job_desc">
+                <div class="job_nametitle text_alignL bwR">
+                  <p class="job_name hidden">Job</p>
+                  <p class="job_title hidden">Title</p>
+                </div>
+                <div class="absolutebottom">
+                  <p class="job_desc_specific bodytext hidden telegrafL">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat, animi molestiae incidunt esse iure magni distinctio excepturi quaerat obcaecati perferendis, rem repellendus cumque est quae vero earum amet dignissimos molestias libero ab? Sed quidem magnam veniam error, libero nulla qui consequuntur quae ab harum distinctio, ratione voluptatem ut illo. Ex?
+                  </p>
+                </div>
+              </div>
+              <div class="exp_time hidden recifeB">
+                <p>TBD2024 to TBD2024</p>
+              </div>
+            </div>
+            <!-- third job (3) -->
+            <div class="exp_outer inner_boxes expright">
+              <div class="expimagescontainer hidden">
+                <img class="exp1_img expimages" src="images/rep_img.jpg" alt="a picture of me">
+              </div>
+              <div class="job_desc">
+                <div class="job_nametitle text_alignL bwR">
+                  <p class="job_name hidden">Job</p>
+                  <p class="job_title hidden">Title</p>
+                </div>
+                <div class="absolutebottom">
+                  <p class="job_desc_specific bodytext hidden telegrafL">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat, animi molestiae incidunt esse iure magni distinctio excepturi quaerat obcaecati perferendis, rem repellendus cumque est quae vero earum amet dignissimos molestias libero ab? Sed quidem magnam veniam error, libero nulla qui consequuntur quae ab harum distinctio, ratione voluptatem ut illo. Ex?
+                  </p>
+                </div>
+              </div>
+              <div class="exp_time hidden recifeB">
+                <p>TBD2023 to TBD2023</p>
+              </div>
+            </div>
+          </div>
+          <div class="innerparts">
+          <div id="projects" class="anchors"></div>
+          <img src="images/backgrounds/2.png" alt="grainy background shape 2" class="bgimg proj_bgimg">
+                </div>
+        </div>
+<!-- Personal Projects Section -------------------------->
+
+        <h3 class="sectionhead projectHead recifeL hidden">Projects</h3>
+        <div class="inner_boxes projtemp">
+          <p class="hidden projecttext">some wip animation using js idk more to come :&rpar; <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores explicabo voluptates tempora vel rem voluptatem repellendus debitis, assumenda distinctio corporis beatae eligendi, soluta atque animi dolorem quaerat repellat earum a nulla facilis! 
+            Dicta maiores eligendi totam? Expedita, nostrum corporis provident consectetur iusto quam, iste minus quidem optio incidunt cum, sed harum perspiciatis vitae assumenda temporibus culpa quos dolores reprehenderit. Eligendi officiis iusto reiciendis fugiat et! Minus saepe eligendi fugiat, officia illo tempora, adipisci excepturi iusto 
+            cumque in ipsa deleniti quasi sunt porro. Accusamus, impedit? Similique vero quaerat officia at cupiditate ipsam adipisci natus tempore, tenetur harum ad totam rerum et. Quo est excepturi aperiam dolorem reprehenderit ea veritatis placeat ullam voluptas a, magnam vel, ut ab id sequi eum assumenda corrupti consequuntur iusto exercitationem 
+            sunt repellat corporis, velit nemo. Maxime praesentium enim numquam perferendis inventore harum fuga, doloremque architecto unde mollitia impedit dignissimos, est, sint voluptate dolore eligendi facilis repudiandae esse hic nemo molestiae? Architecto, praesentium accusamus voluptates voluptatem ipsa id quod! Sed pariatur ipsum deserunt 
+            soluta nisi optio cumque impedit neque dicta placeat similique dignissimos doloremque, alias sequi veniam laboriosam beatae? Blanditiis reprehenderit consectetur qui asperiores minus nam voluptatem? Dolores temporibus perferendis nam aspernatur soluta delectus quae veritatis neque. <br> Lorem ipsum dolor sit, amet consectetur adipisicing 
+            elit. Quibusdam unde quaerat labore numquam quasi commodi dolor, sit quod molestiae officiis sint velit quis tempora nisi dolorem corrupti aliquam earum incidunt eaque eius, deserunt porro saepe ipsam. Esse fugiat eligendi incidunt porro vel saepe minima, delectus culpa dolore praesentium optio, sapiente inventore eius quibusdam harum 
+            corporis nihil? Eaque doloremque nihil at in neque, iure dolorem fugiat tenetur commodi laborum sunt pariatur, facilis veniam consequatur exercitationem. Reiciendis laborum quas quibusdam magnam ab aperiam aspernatur suscipit, beatae veritatis excepturi eum cum laudantium amet sint, obcaecati fugit nesciunt. Commodi nisi voluptatibus 
+            vitae natus, sequi cupiditate dolore possimus ea dolorem. Aliquid atque, cumque eum rerum accusamus soluta harum sequi molestias eaque. Quasi ullam asperiores delectus veniam tenetur dolor vitae fugiat deleniti, atque nihil eius sunt! Id debitis dicta quae fugit, explicabo consequatur. Ipsam quia temporibus eveniet repellendus optio 
+            quasi amet natus fugiat eaque fuga neque, suscipit assumenda pariatur sunt voluptates nesciunt sed maxime eligendi. Sapiente, corrupti quasi nam voluptatem veritatis distinctio provident, doloribus nisi enim inventore corporis. Voluptas amet sunt facere sit, iste autem consectetur rem consequatur dolores possimus similique nihil tenetur 
+            repudiandae dolorum eligendi earum eos necessitatibus delectus modi debitis nobis repellendus esse ipsa!</p>
+        </div>
+      <div class="innerparts noBottomMargin" >
+<!-- Other interests -->
+      <div id="interests" class="anchors"></div>
+      <img src="images/backgrounds/3.png" alt="" class="bgimg other_bgimg">
+        <div class="sectionhead otherInterestsHead bwL hidden">Other <span class="recifeL">Interests</span></div>
+        
+        <div class="phototecbox noBottomMargin inner_boxes">
+          <div class="photodiv">
+            <div class="photodivtitle">
+              <p class="hidden interestTitle recifeL">Photography</p>
+            </div>
+            <div class="photodivtext">
+              <p class="hidden bwL">awwaawwa</p>
+            </div>
+            <div class="intbuttons">
+              <a style="text-decoration: none;" href="photopage.html" target="_blank">
+                <button class="call-to-action-btn bwL linktophoto">
+                  Learn More
+                </button>
+              </a>
+            </div>
+            <div class="photobg interestbg">
+              <img class="photobgimg" src="/images/photbg/IMG_0317.jpg" alt="photography page image">
+            </div>
+          </div>
+          <div class="tecdiv">
+            <div class="tecdivtitle">
+              <p class="hidden interestTitle recifeL">Tecario</p>
+            </div>
+            <div class="tecdivtext">
+              <p class="hidden bwL">awwaawwa</p>
+            </div>
+            <div class="intbuttons">
+              <a style="text-decoration: none;" href="https://tecario.yipyapyop.net/" target="_blank">
+                <button class="call-to-action-btn bwL linktotecario">
+                  Learn More
+                </button>
+              </a>
+            </div>
+            <div class="tecbg interestbg">
+              <img class="tecbgimg" src="images/photbg/under_the_moonlight_edited.png" alt="photo of tecario">
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- contactme form -->
+      <div class=" innerparts contact-container noTopMargin">
+        <div id="contactme" class="anchors"></div>
+        
+        <div class="right-col">
+          
+          <p class="hidden contactHeader bwR">Contact Me</p>
+          <p class="hidden contactText telegrafL">Have any questions? Want to learn more? Feel free to drop me a message to get in contact!</p>
+          
+          <form id="contact-form" method="post">
+            <label class="contactLabel" for="name">Full name</label>
+        <input class="contactInput" type="text" id="name" name="name" placeholder="Your Full Name" required>
+            <label class="contactLabel" for="email">Email Address</label>
+        <input class="contactInput" type="email" id="email" name="email" placeholder="Your Email Address" required>
+            <label class="contactLabel" for="message">Message</label>
+        <textarea rows="6" placeholder="Your Message" type="message" id="message" name="message" required></textarea>
+            <button class="call-to-action-btn telegrafR" type="submit" id="submit" name="submit">Send</button>
+          </form>
+          <div class="recifeL" id="error"></div>
+          <div id="success-msg"></div>
+          <p id="backuptext" class=" backupemail hidecontactbtn backuptransition telegrafL contactText"> 
+            To ensure delivery, please shoot a manual email to <br>jhopwforwarding@gmail.com <br>through the button below, and I will get back to you as soon as possible! 
+          </p>
+          <button onclick="sendEmail()" id="backupbtn" class="hidecontactbtn call-to-action-btn backuptransition backupemail">
+            click to send
+          </button>
+        </div>
+        <div class="left-col">
+          <img class="logoforcontact" src="/images/tec_logo.png"/>
+        </div>
+      </div>
+    </div>
+<!-- CONTACT FORM -->
+    
+
+
+
+<!--    <h6>Contact Me</h6>
+    <a href="mailto:jh182@gmail.com">Email Me</a>
+
+    <a href="https://tecario.yipyapyop.net" target="_blank">tecario website</a>
+<!--     <a href="bruh/photopage.html">
+        <img class="hl" src="images/jacatobackup.png" alt="tecario">
+    </a> -->
+    <video class="bg" autoplay muted loop src="videos/jacato.mp4" poster="images/jacatobackup.png"></video>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>  
+    <script src="script.js"></script>
+  </body>
+  
+</html>
