@@ -76,6 +76,7 @@ function expOpacityFadeInOut(){
 /* use thee function from magneetic to find lower height and upper hegiht to adjust for height above */
 
 window.addEventListener('scroll', expOpacityFadeInOut)
+window.addEventListener('load', expOpacityFadeInOut)
 
 
 /*  Text scramble section */
