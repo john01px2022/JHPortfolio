@@ -249,9 +249,6 @@ class MagneticObject {
     }
 }
 
-document.querySelectorAll(".call-to-action-btn").forEach(element => {
-    new MagneticObject(element);
-});
 
 
 class MagneticContact {
@@ -314,6 +311,9 @@ document.querySelectorAll(".MagenticButtonContact").forEach(element => {
     new MagneticContact(element);
 });
 
+document.querySelectorAll(".call-to-action-btn").forEach(element => {
+        new MagneticObject(element);
+    });
 //contact form
 
 const name = document.getElementById('name');

@@ -446,6 +446,7 @@ a.headerlinks:hover{
   width: 100%;
   height: auto;
   background-color: var(--background);
+
 }
 
 /* removed bc i think it might be more clean idk :3 */
@@ -470,6 +471,7 @@ a.headerlinks:hover{
   height: auto;
   margin-bottom: 9em;
   margin-top: 12.5em;
+  z-index: 1;
 }
 
 
@@ -1000,9 +1002,8 @@ img.myphoto:hover {
   filter: brightness(1) saturate(1.2) grayscale(0);
 }
 
-/* magnetic buttonsss */
+/* magnetic buttons */
 .call-to-action-btn{
-  display: block;
   padding: 15px 30px;
   border-radius: 50px;
   border: 1px solid var(--text);
@@ -1010,7 +1011,10 @@ img.myphoto:hover {
   background-color: var(--background);
   cursor: pointer;
   transition: all 0.2s;
+  text-decoration: none;
   pointer-events: all;
+  position: relative;
+  z-index: 2;
 }
 
 .focus{
