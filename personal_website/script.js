@@ -388,32 +388,29 @@ submitBtn.addEventListener('click', function(e) {
 });
 
 function sendMail() {
-    const email = 'jhopwforwarding@gmail.com';
-    const subject = 'Message from ' + name.value + 
-        ' via ' + email.value;
-    const body = message.value;
+    const toEmail = email.value;
+    const name = name.value;
+    const message = message.value;
 
-    Email.send({
-        Host: "smtp.gmail.com",
-        Username : email,
-        Password : "John040729!",
-        To : email,
-        From : email,
-        Subject : subject,
-        Body : body,
-        }).then(
-        message => alert("If no response, please shoot an email to " + 
-            email + " to ensure delivery, and I will get back to you as soon as possible")
-        );
+    const data = {
+        name : name,
+        toEmail : toEmail,
+        message : message
+    };
+
+    fetch('http://localhost:3000/send-email', { // change this into actual url when done
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log('information sent to backend', data);
+    })
+    .catch((error) => {
+        console.error('front-backend sending error:', error);
+    });
     
-}
-
-function sendEmail() {
-    const mailtoLink = `mailto:${'jhopwforwarding@gmail.com'}
-                        ?cc=${encodeURIComponent('jh182@rice.edu')}
-                        &subject=${encodeURIComponent('Message from ' + name.value + 
-                            ' via ' + email.value)}
-                        &body=${encodeURIComponent(message.value)}`;
-
-    window.location.href = mailtoLink;
 }

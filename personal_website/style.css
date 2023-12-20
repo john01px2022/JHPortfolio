@@ -708,6 +708,7 @@ img.myphoto:hover {
   left: 50%;
   filter: contrast(0.8) brightness(1.1) blur(2px);
   transform: translate(-50%,-17%);
+  z-index: -10;
 }
 .job_nametitle{
   color: var(--turquoise);
@@ -857,6 +858,7 @@ img.myphoto:hover {
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
+  z-index: 1;
 }
 
 .projtemp{
@@ -867,11 +869,13 @@ img.myphoto:hover {
   left: 50%;
   transform: translate(-50%);
   text-align: center;
-  font-weight: 400;  
+  font-weight: 400;    
+  z-index: 1;
 }
 
 .projecttext{
   letter-spacing: -0.03em;
+
 }
 
 
@@ -945,6 +949,8 @@ img.myphoto:hover {
 .photodivtext, .tecdivtext{
   margin-left: 80px;
   margin-right: 80px;
+  width: 50%;
+  line-height: 1.5em;
 }
 
 .linktophoto, .linktotecario{
