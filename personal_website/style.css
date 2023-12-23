@@ -518,9 +518,45 @@ a.headerlinks:hover{
   color: var(--text);
 }
 
-@media (max-width: 1456px){
+.img_links{
+  z-index: 4;
+  padding-top: 5px;
+  width: 20%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding-left: 5px;
+}
+@media (max-width: 1539px){
   .bio_text{
+    width: 50%;
+  }
+  .biogrid{
+    width: 65%;
+  }
+}
+
+@media (max-width: 1456px){
+  .biogrid{
+    width: 70%;
+  }
+}
+
+@media (max-width: 1384px){
+  .biogrid{
     width: 75%;
+  }
+}
+
+@media (max-width: 1296px){
+  .biogrid{
+    width: 80%;
+  }
+}
+
+@media (max-width: 1220px){
+  .biogrid{
+    width: 85%;
   }
 }
 
@@ -528,11 +564,21 @@ a.headerlinks:hover{
   .bio_text{
     width: 85%;
   }
+  .biogrid{
+    flex-direction: column-reverse;
+    width: 65%;
+  }
+  .img_links{
+    width: 25%;
+  }
 }
 
 @media (max-width: 600px) {
   .biogrid{
     width: 80%;
+  }
+  .img_links{
+    width: 30%;
   }
 }
 
@@ -542,16 +588,7 @@ a.headerlinks:hover{
   }
 }
 
-.img_links{
-  z-index: 4;
-  padding-top: 5px;
-  width: 20%;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  padding-left: 0.45em;
 
-}
 
 .school_major{
   z-index: 1;
@@ -673,6 +710,51 @@ img.myphoto:hover {
   letter-spacing: -0.01em;
 }
 
+
+
+/* tech stackxkkkkk */
+
+.tech-stack {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Adjust the space between items */
+  margin-bottom: -4em;
+}
+
+.tech-title{
+  width: 100%;
+  font-size: 4.5em;
+  height: 3em;
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+  margin-bottom: -1em;
+}
+
+.tech-item {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row;
+  align-items: center;
+  width: 40% ;/* Choose your preferred font */
+}
+
+.tech-item i {
+  font-size: 40px; /* Adjust icon size */
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-right: 7px;
+  margin-left: 7px;
+  scale: 150%;
+  color: var(--text);
+}
+
+.tech-item span {
+  font-size: 14px;
+}
+
 /* ----------------------------------------- */
 /* EXPERIENCES */
 .opacity100{
@@ -706,7 +788,7 @@ img.myphoto:hover {
   display: block;
   width: 70%;
   left: 50%;
-  filter: contrast(0.8) brightness(1.1) blur(2px);
+  filter: contrast(0.8) brightness(0.9) blur(2px);
   transform: translate(-50%,-17%);
   z-index: -10;
 }
@@ -717,22 +799,38 @@ img.myphoto:hover {
   flex-grow: 1;
   justify-content: center;
   align-items: center;
-
 }
+
+.job_nametitle2{
+  align-content: flex-start;
+}
+
 .job_desc{
-  color: var(--text);
+  color: var(--background);
   display: flex;
   width: 30%;
   flex-flow: column wrap;
   justify-content: center;
   flex-grow: 3;
+  padding-top: 1.5em;
 }
 
+.absolutebottom{
+  flex-grow: 2;
+}
 
+ul.joblist li{
+  list-style-type: disc;
+  margin-bottom: 1em;
+}
+
+.joblist{
+  padding: 0.8em;
+}
 
 .exp_outer{
   z-index: 1;
-  width: 60%;
+  width: 75%;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
@@ -740,7 +838,7 @@ img.myphoto:hover {
 
 .expimagescontainer{
   margin-right: 1em;
-  width: 15%;
+  width: 30%;
   padding: 1.5em;
   display: grid;
   justify-items: center;
@@ -833,6 +931,7 @@ img.myphoto:hover {
   flex-grow: 1;
   margin-bottom: 0;
   margin-top: 0;
+  text-align: start;
 }
 .job_title{
   letter-spacing: -0.03em;
@@ -844,7 +943,7 @@ img.myphoto:hover {
 }
 .exp_time{
   letter-spacing: -0.02em;
-  color: var(--text);
+  color: var(--background);
   flex-grow: 1;
   align-items: center;
   margin: auto;
@@ -875,7 +974,8 @@ img.myphoto:hover {
 
 .projecttext{
   letter-spacing: -0.03em;
-
+  font-size: 7.5em;
+  text-align: left;
 }
 
 

@@ -65,8 +65,8 @@ function expOpacityFadeInOut(){
     if (boundingTop < clientHeight/2 && boundingBot > clientHeight/1.75){
         opacity = 1 - (boundingTop / (clientHeight/2));
         console.log("IN")
-    }else if (boundingBot < clientHeight/1.75){
-        opacity = boundingBot / (clientHeight/1.75);
+    }else if (boundingBot < clientHeight/1.25){
+        opacity = boundingBot / (clientHeight/2);
         console.log("OUT")
     }else {
         opacity = 0;
@@ -94,8 +94,8 @@ class TextScramble {
         for (let i = 0; i < length; i++) {
         const from = oldText[i] || ''
         const to = newText[i] || ''
-        const start = Math.floor(Math.random() * 100)
-        const end = start + Math.floor(Math.random() * 80)
+        const start = Math.floor(Math.random() * 25) // change these to update time
+        const end = start + Math.floor(Math.random() * 25)
         this.queue.push({ from, to, start, end })
         }
         cancelAnimationFrame(this.frameRequest)
@@ -112,7 +112,7 @@ class TextScramble {
             complete++
             output += to
         } else if (this.frame >= start) {
-            if (!char || Math.random() < 0.28) {
+            if (!char || Math.random() < 0.8) {// change char speed
             char = this.randomChar()
             this.queue[i].char = char
             }
