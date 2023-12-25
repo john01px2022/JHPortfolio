@@ -94,8 +94,8 @@ class TextScramble {
         for (let i = 0; i < length; i++) {
         const from = oldText[i] || ''
         const to = newText[i] || ''
-        const start = Math.floor(Math.random() * 25) // change these to update time
-        const end = start + Math.floor(Math.random() * 25)
+        const start = Math.floor(Math.random() * 50) // change these to update time
+        const end = start + Math.floor(Math.random() * 75)
         this.queue.push({ from, to, start, end })
         }
         cancelAnimationFrame(this.frameRequest)
@@ -112,7 +112,7 @@ class TextScramble {
             complete++
             output += to
         } else if (this.frame >= start) {
-            if (!char || Math.random() < 0.8) {// change char speed
+            if (!char || Math.random() < 0.28) {// change char speed
             char = this.randomChar()
             this.queue[i].char = char
             }
