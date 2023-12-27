@@ -773,7 +773,7 @@ img.myphoto:hover {
 .expdivbackgroundACTUAL{
   width: 100vw;
   height: calc(100vh + 76px);
-  background-color: var(--text);
+  background-color: #001118;
   position: fixed;
   z-index: 1;
   top: 0;

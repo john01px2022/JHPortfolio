@@ -316,7 +316,7 @@ document.querySelectorAll(".call-to-action-btn").forEach(element => {
     });
 //contact form
 
-const name = document.getElementById('name');
+const fullNameame = document.getElementById('name');
 const email = document.getElementById('email');
 const message = document.getElementById('message');
 const contactForm = document.getElementById('contact-form');
@@ -326,7 +326,7 @@ const submitBtn = document.getElementById('submit');
 
 const validate = (e) => {
     e.preventDefault()
-    if (name.value.length < 3) {
+    if (fullName.value.length < 3) {
         errorElement.innerHTML = 'Your name should be at least 3 characters long.';
         return false;
     } 
@@ -388,14 +388,14 @@ submitBtn.addEventListener('click', function(e) {
 });
 
 function sendMail() {
-    const toEmail = email.value;
-    const name = name.value;
-    const message = message.value;
+    const userName = fullName.value;
+    const userEmail = email.value;
+    const userMessage = message.value;
 
     const data = {
-        name : name,
-        toEmail : toEmail,
-        message : message
+        name: userName,
+        fromEmail: userEmail,
+        message: userMessage
     };
 
     fetch('https://jh-personal-website-tau.vercel.app/send-email', { // change this into actual url when done
