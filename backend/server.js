@@ -5,19 +5,17 @@ require('dotenv').config();
 
 const cors = require('cors');
 const corsOptions = {
-    origin: 'https://tecari0.github.io', // Replace with your frontend's URL
+    origin: 'https://tecari0.github.io/JHPersonalWebsite/front/', // Replace with your frontend's URL
     optionsSuccessStatus: 200
 };
-
 app.use(cors(corsOptions));
 
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const app = express();
 
 
-app.use(cors({
-    origin: "https://jh-personal-website-tau.vercel.app/"
-}));
+
 
 app.use(bodyParser.json())
 
