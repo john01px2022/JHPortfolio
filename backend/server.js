@@ -3,16 +3,19 @@ const nodemailer = require("nodemailer");
 var bodyParser = require('body-parser')
 require('dotenv').config();
 
+const app = express();
 const cors = require('cors');
-const corsOptions = {
+/* const corsOptions = {
     origin: 'https://tecari0.github.io/JHPersonalWebsite/front/', // Replace with your frontend's URL
     optionsSuccessStatus: 200
 };
-app.use(cors(corsOptions));
+app.use(cors(corsOptions)); */
 
-import { SpeedInsights } from "@vercel/speed-insights/next"
+app.use(cors());
 
-const app = express();
+/* import { SpeedInsights } from "@vercel/speed-insights/next" */
+
+
 
 
 
