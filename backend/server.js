@@ -2,7 +2,16 @@ const express = require('express');
 const nodemailer = require("nodemailer");
 var bodyParser = require('body-parser')
 require('dotenv').config();
+
 const cors = require('cors');
+const corsOptions = {
+    origin: 'https://tecari0.github.io', // Replace with your frontend's URL
+    optionsSuccessStatus: 200
+};
+
+app.use(cors(corsOptions));
+
+
 const app = express();
 
 
