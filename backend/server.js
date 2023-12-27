@@ -13,9 +13,6 @@ app.use(cors(corsOptions)); */
 
 app.use(cors());
 
-/* import { SpeedInsights } from "@vercel/speed-insights/next" */
-
-
 
 
 
@@ -35,7 +32,7 @@ var transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
         user: process.env.email,
-        pass: process.env.pass
+        pass: process.env.password
     }
 });
 
