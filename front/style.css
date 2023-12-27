@@ -830,7 +830,7 @@ ul.joblist li{
 
 .exp_outer{
   z-index: 1;
-  width: 75%;
+  width: 60%;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
