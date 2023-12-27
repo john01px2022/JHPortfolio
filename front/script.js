@@ -316,7 +316,7 @@ document.querySelectorAll(".call-to-action-btn").forEach(element => {
     });
 //contact form
 
-const fullNameame = document.getElementById('name');
+const fullName = document.getElementById('name');
 const email = document.getElementById('email');
 const message = document.getElementById('message');
 const contactForm = document.getElementById('contact-form');
