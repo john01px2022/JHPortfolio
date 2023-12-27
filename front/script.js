@@ -398,7 +398,7 @@ function sendMail() {
         message : message
     };
 
-    fetch('http://localhost:3000/send-email', { // change this into actual url when done
+    fetch('https://jh-personal-website-tau.vercel.app/send-email', { // change this into actual url when done
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',

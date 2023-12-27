@@ -12,3 +12,4 @@ node_modules/
 
 # Optional: OS generated files like .DS_Store (for macOS)
 .DS_Store
+.vercel

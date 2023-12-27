@@ -6,7 +6,9 @@ const cors = require('cors');
 const app = express();
 
 
-app.use(cors());
+app.use(cors({
+    origin: "https://jh-personal-website-tau.vercel.app/"
+}));
 
 app.use(bodyParser.json())
 
@@ -14,7 +16,10 @@ app.get('/', (req, res) => {
     res.send('Successful response.');
 });
 
-app.listen(3000, () => console.log('nodemailer is listening on port 3000.'));
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
+});
 
 var transporter = nodemailer.createTransport({
     service: 'gmail',
