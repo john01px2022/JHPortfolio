@@ -398,7 +398,7 @@ function sendMail() {
         message: userMessage
     };
 
-    fetch('https://jh-personal-website-tau.vercel.app/send-email', { // change this into actual url when done
+    fetch('https://email-forwarding-6hd5.onrender.com/send-email', { // change this into actual url when done
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
