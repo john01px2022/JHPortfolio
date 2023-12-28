@@ -1369,11 +1369,6 @@ textarea {
   margin-top: 0;
 }
 
-html, body {
-  overflow-x: hidden;
-}
-
-
 @media (max-width:1000px){
   .exp_outer{
     width: 100%;
@@ -1508,5 +1503,11 @@ html, body {
   .exp_time{
     text-align: right;
     width: 80%;
+  }
+}
+
+@media (max-width: 560px) {
+  body {
+    overflow-x: hidden;
   }
 }
