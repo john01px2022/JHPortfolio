@@ -735,17 +735,7 @@ img.myphoto:hover {
 
 }
 
-@media (max-width:800px){
-  .tech-title{
-  font-size: 3em;
-  }
-}
 
-@media (max-width:500px){
-  .tech-title{
-  font-size: 2.5em;
-  }
-}
 
 .tech-item {
   display: flex;
@@ -1010,6 +1000,7 @@ ul.joblist li{
   letter-spacing: -0.03em;
   font-size: 7.5em;
   text-align: left;
+  margin-left: 0.5em;
 }
 
 @media (max-width:600px){
@@ -1382,27 +1373,54 @@ html, body {
   overflow-x: hidden;
 }
 
-@media (max-width:650px){
-  .sectionhead{
-    font-size: 5em;
+
+@media (max-width:1000px){
+  .exp_outer{
+    width: 100%;
+  }
+  .expright{
+    transform: translate(-50%);
+  }
+  .expleft{
+    transform: translate(-50%);
   }
 }
 
-@media (max-width:500px){
-  .sectionhead{
-    font-size: 3em;
+@media (max-width:800px){
+  .tech-title{
+  font-size: 3em;
+  }
+}
+
+@media (max-width:750px){
+  .expimagescontainer{
+    display: none;
+  }
+  .exp_outer{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
 @media (max-width:700px){
+  .sectionhead{
+    font-size: 3em;
+  }
   .projecttext{
     font-size: 5em;
   }
+
 }
 
-@media (max-width:500px){
-  .projecttext{
-    font-size: 3em;
+
+
+@media (max-width:650px){
+  .sectionhead{
+    font-size: 5em;
+  }
+  .tech-title{
+  font-size: 2.5em;
   }
 }
 
@@ -1444,5 +1462,51 @@ html, body {
   }
   .linktotecario{
     left: 15.5em
+  }
+  .myphoto{
+    width: 85%;
+    filter: saturate(1) ;
+  }
+  .school{
+    font-size: 1.6em;
+  }
+  .majordesc{
+    font-size: 1em;
+    justify-content: center;
+    margin-top: 1em;
+  }
+  .school_major{
+    margin-bottom: -1em;
+  }
+}
+
+@media (max-width:500px){
+  .projecttext{
+    font-size: 3em;
+  }
+  .tecdivtitle {
+    font-size: 3em;
+  }
+  .photodivtitle{
+    font-size: 3em;
+  }
+  .experienceHeadText{
+    font-size: 4em;
+  }
+  .experienceHead{
+    left: 55%;
+  }
+  .expimagescontainer{
+    display: none;
+  }
+  .exp_outer{
+    flex-flow: column;
+  }
+  .job_desc{
+    width: 70%;
+  }
+  .exp_time{
+    text-align: right;
+    width: 80%;
   }
 }

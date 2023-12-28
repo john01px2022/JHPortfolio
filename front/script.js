@@ -61,6 +61,7 @@ function expOpacityFadeInOut(){
     const boundingBot = boundingClientRect.bottom; /* bot measurement */
     const expDivBackgroundHeight = expDivBackground.offsetHeight; /* divheight */
     const clientHeight = document.documentElement.clientHeight; /* page height */
+    const clientWidth = document.documentElement.clientWidth /* page width */
     var opacity = 0;
     if (boundingTop < clientHeight/2 && boundingBot > clientHeight/1.75){
         opacity = 1 - (boundingTop / (clientHeight/2));
@@ -68,8 +69,6 @@ function expOpacityFadeInOut(){
     }else if (boundingBot < clientHeight/1.25){
         opacity = boundingBot / (clientHeight/2);
         console.log("OUT")
-    }else {
-        opacity = 0;
     }
     expDivBackgroundActual.style.opacity = `${opacity}`;
 }
