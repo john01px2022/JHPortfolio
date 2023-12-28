@@ -314,6 +314,36 @@ document.querySelectorAll(".MagenticButtonContact").forEach(element => {
 document.querySelectorAll(".call-to-action-btn").forEach(element => {
         new MagneticObject(element);
     });
+
+// Function to set width of bgvid to match expouterbox
+// Function to set width of bgvid to match expouterbox
+function matchWidthInterests() {
+    var expouterbox = document.getElementById('expouterbox');
+    var bgvid = document.getElementById('bgvid');
+    var expDivBackground = document.getElementById('expdivbackgroundACTUAL')
+
+    if (expouterbox && bgvid && expDivBackground) {
+        var newWidth = expouterbox.offsetWidth;
+        bgvid.style.width = newWidth + 'px';
+        expDivBackground.style.width = newWidth + 'px';
+        console.log('bgvid and expdivbackgroundACTUAL width set to: ', newWidth);
+    } else {
+        console.log('One of the elements is not found.');
+        if (!expouterbox) {
+        console.log('expouterbox not found');
+        }
+        if (!bgvid) {
+        console.log('bgvid not found');
+        }
+        if (!expDivBackground) {
+            console.log('expdivbackgroundACTUAL not found')
+        }
+    }
+}
+window.addEventListener('load', matchWidthInterests);
+window.addEventListener('resize', matchWidthInterests);
+
+
 //contact form
 
 const fullName = document.getElementById('name');
