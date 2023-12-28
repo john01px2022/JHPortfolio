@@ -6,4 +6,4 @@ As of Sep 11, 2023, the files contained are yet to be hosted on a live server an
 Todo:
 1. figure out how to host website
 
-!!! IF YOU ARE TRYING TO ACCESS THE SITE, PLEASE PROCEED [HERE](https://tecari0.github.io/JHPersonalWebsite/front/)!!!
+!!! IF YOU ARE TRYING TO ACCESS THE SITE, PLEASE PROCEED [HERE](https://tecari0.github.io/JHProfolio/front)!!!
