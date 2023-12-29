@@ -73,7 +73,7 @@
 
 
 :root{
-  --text: #0d1c14;
+  --text: #001118;
   --background: #f0ffff;
   --turquoise: #00e8c2;
   --blue: #008cca;
@@ -795,7 +795,7 @@ img.myphoto:hover {
 .expdivbackgroundACTUAL{
   width: 100%;
   height: calc(100vh + 76px);
-  background-color: #001118;
+  background-color: var(--text);
   position: fixed;
   z-index: 1;
   top: 0;
