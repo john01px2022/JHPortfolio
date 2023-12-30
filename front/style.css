@@ -728,6 +728,7 @@ img.myphoto:hover {
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px; /* Adjust the space between items */
+  margin-bottom: 20em;
 }
 
 .tech-title{
