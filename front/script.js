@@ -16,7 +16,6 @@ document.addEventListener('scroll',scrollProgress);
 
 /* Tecario / Name Header placement and text size */
 const headTextSize = document.getElementById("TecarioHeaderInner")
-
 const originalHeader = document.getElementById("TecarioHeaderInner");
 const originalHeaderStyle = window.getComputedStyle(originalHeader).getPropertyValue('font-size');
 const originalWidthOfPage = document.documentElement.clientWidth;
@@ -64,11 +63,15 @@ function expOpacityFadeInOut(){
     const clientWidth = document.documentElement.clientWidth /* page width */
     var opacity = 0;
     if (boundingTop < clientHeight/2 && boundingBot > clientHeight/1.75){
+        expDivBackgroundActual.style.display = "block"
         opacity = 1 - (boundingTop / (clientHeight/2));
         console.log("IN")
     }else if (boundingBot < clientHeight/1.25){
+        expDivBackgroundActual.style.display = "block"
         opacity = boundingBot / (clientHeight/2);
         console.log("OUT")
+    }else {
+        expDivBackgroundActual.style.display = "none"
     }
     expDivBackgroundActual.style.opacity = `${opacity}`;
 }

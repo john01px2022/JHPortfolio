@@ -44,7 +44,14 @@
   font-family: telegrafLight;
   src: url(fonts/telegraf/PPTelegraf-UltraLight.otf);
 }
+@font-face {
+  font-family: MyriadProBold;
+  src: url(fonts/MYRIADPRO-BOLD.OTF);
+}
 
+.myriad{
+  font-family: "MyriadProBold", sans-serif;
+}
 
 .bwL{
   font-family: "bwlight", sans-serif;
@@ -162,7 +169,7 @@ video.bg {
 /* scroll progress */
 .scroll-progress{
   width: 0 ;
-  background: linear-gradient(56deg, var(--blue) 0%, var(--turquoise) 40%, var(--green) 100%);
+  background: linear-gradient(56deg, var(--blue) 0%, var(--turquoise) 65%, var(--green) 100%);
   height: 5px;
   position: fixed;
   top: 0px;
@@ -721,7 +728,6 @@ img.myphoto:hover {
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px; /* Adjust the space between items */
-  margin-bottom: -4em;
 }
 
 .tech-title{
@@ -872,9 +878,10 @@ ul.joblist li{
   width: 100%;
   height: 100%;
   border-radius: 1em;
-  object-fit: cover;
+  object-fit:contain;
   object-position: center center;
   min-width: 100px;
+  background-color: white;
 }
 
 .linkedinspin{
@@ -973,6 +980,61 @@ ul.joblist li{
   margin: auto;
   text-align: center;
 }
+/* ----------------------------------------- */
+/* Linkedin marquee */
+.delayed{
+  transform: rotateZ(-2.5deg) translateX(-1em);
+}
+.regular{
+  transform: rotateZ(5deg) translateX(-1em);
+}
+
+.linkedin-logos{
+  z-index: 6;
+  width: 102.5%;
+  overflow: hidden;
+  padding: 0.5em 0;
+  background-color: var(--text);
+  display: flex;
+  margin-bottom: -6em;
+}
+
+.logo-slide{
+  min-width: 100%;
+  gap: 1em;
+  display: flex;
+  flex: none;
+  align-items: center;
+  animation: 5s slide infinite linear;
+}
+
+
+@keyframes slide {
+  from{
+    transform: translate(0);
+  }
+  to {
+    transform: translate(-100%);
+  }
+}
+
+.delayed-anim{
+  animation-delay: 2.5s;
+}
+
+.logo-slide img{
+  height: 4em;
+  position: relative;
+  z-index: 7;
+}
+
+.logo-slide p {
+  font-size: 3.5em;
+  color: white;
+  margin: auto 0;
+  padding-top: 0.25em;
+}
+
 /* ----------------------------------------- */
 /* PROJECTS */
 .projectHead{
