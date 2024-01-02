@@ -1184,10 +1184,6 @@ ul.joblist li{
 }
 
 
-.tecdiv:hover{
-  flex-grow: 1.25;
-}
-
 .tecbg{
   position: absolute;
   top: 0;
