@@ -4,6 +4,6 @@ This website, coded with HTML, CSS, and Javascript, serves as my future professi
 As of Sep 11, 2023, the files contained are yet to be hosted on a live server and are still under development. The frontend of the website is essentially completed, with a couple of bug fixes needed for the contact form. On the other hand, the backend nodemailer function to send contact emails needs to be implemented and finalized. The photography page is still under development as of now. 
 
 Todo:
-1. Website hosted, work on photography profolio
+1. Website hosted, work on photography portfolio
 
-!!! IF YOU ARE TRYING TO ACCESS THE SITE, PLEASE PROCEED [HERE](https://tecari0.github.io/JHProfolio/front)!!!
+!!! IF YOU ARE TRYING TO ACCESS THE SITE, PLEASE PROCEED [HERE](https://tecari0.github.io/JHPortfolio/front/)!!!
