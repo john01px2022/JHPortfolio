@@ -633,7 +633,7 @@ a.headerlinks:hover{
   background-size: calc(100% - var(--_o)) calc(100% - var(--_o));
   background-repeat: no-repeat;
   filter:grayscale(0.7);
-  filter: saturate(0.7);
+  filter: saturate(1);
   transition: .5s;
   cursor: pointer;
 }
