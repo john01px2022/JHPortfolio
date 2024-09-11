@@ -6,4 +6,4 @@ As of Sep 11, 2023, the files contained are yet to be hosted on a live server an
 Todo:
 1. Website hosted, work on photography portfolio
 
-!!! IF YOU ARE TRYING TO ACCESS THE SITE, PLEASE PROCEED [HERE](https://tecari0.github.io/JHPortfolio/front/)!!!
+!!! IF YOU ARE TRYING TO ACCESS THE SITE, PLEASE PROCEED [HERE](https://john01px2022.github.io/JHPortfolio/front/)!!!
